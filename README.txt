@@ -28,9 +28,9 @@ be removed.)
             -Dversion=0.94
             -Dpackaging=jar
 
- 3. Put bin/cljs-recompile on your $PATH.
+ 3. Put bin/cljsc-auto on your $PATH.
  4. Ensure $CLOJURESCRIPT_HOME is set.
 
 Usage:
 
- $ cljs-recompile src/ >foo.js
+ $ cljsc-auto src/ >foo.js
