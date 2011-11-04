@@ -1,0 +1,14 @@
+#!/bin/sh
+
+CLJS=$CLOJURESCRIPT_HOME
+THIS=$(dirname $(dirname $(realpath $0)))
+
+CP=$CLJS/lib/\*:$CLJS/src/clj:$CLJS/src/cljs:$THIS/lib/\*:$THIS/src:$1
+
+if test $# -eq 0
+then
+    echo "Usage: cljsc-auto <dir>"
+    echo "       cljsc-auto <dir> {:optimizations :advanced}"
+else
+    java -server -cp $CP clojure.main $THIS/bin/cljsc-auto.clj $*
+fi
