@@ -1,3 +1,8 @@
+Update (Jan 2013): I highly recommend using something like lein-cljsbuild
+(https://github.com/emezeske/lein-cljsbuild) in preference to this library.
+
+===
+
 Watches a directory of ClojureScript (.cljs) files and Clojure (.clj) macros, and
 recompiles them whenever a change is detected.
 
